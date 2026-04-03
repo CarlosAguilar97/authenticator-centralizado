@@ -1,0 +1,445 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Proyectos\\AutorizadorCentralizado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.aplicacion\\servicios\\servicioautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|solutionrelative:autorizador.aplicacion\\servicios\\servicioautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\controllers\\autenticacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.datos\\repositorios\\repositorioconsultageneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|solutionrelative:autorizador.infraestructura.datos\\repositorios\\repositorioconsultageneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.datos\\configuraciones\\seguridadconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|solutionrelative:autorizador.infraestructura.datos\\configuraciones\\seguridadconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.datos\\contextos\\contextobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|solutionrelative:autorizador.infraestructura.datos\\contextos\\contextobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0B32867-C6F9-4663-BB72-62C2411CCB04}|Autorizador.Dominio.Entidades\\Autorizador.Dominio.Entidades.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.dominio.entidades\\entidades\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0B32867-C6F9-4663-BB72-62C2411CCB04}|Autorizador.Dominio.Entidades\\Autorizador.Dominio.Entidades.csproj|solutionrelative:autorizador.dominio.entidades\\entidades\\clinica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.datos\\configuraciones\\clinicaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|solutionrelative:autorizador.infraestructura.datos\\configuraciones\\clinicaconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF8B66EE-AB79-4580-BC08-648EBB8F9A8A}|Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.contenedor\\configurarioc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF8B66EE-AB79-4580-BC08-648EBB8F9A8A}|Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj|solutionrelative:autorizador.infraestructura.contenedor\\configurarioc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF8B66EE-AB79-4580-BC08-648EBB8F9A8A}|Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.contenedor\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF8B66EE-AB79-4580-BC08-648EBB8F9A8A}|Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj|solutionrelative:autorizador.infraestructura.contenedor\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.core\\servicios\\icontextoaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|solutionrelative:autorizador.core\\servicios\\icontextoaplicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.core\\servicios\\iserviciobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|solutionrelative:autorizador.core\\servicios\\iserviciobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.aplicacion\\servicios\\serviciobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|solutionrelative:autorizador.aplicacion\\servicios\\serviciobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.aplicacion\\servicios\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|solutionrelative:autorizador.aplicacion\\servicios\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.core\\utilidades\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|solutionrelative:autorizador.core\\utilidades\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.core\\excepciones\\baseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{528F0434-15E8-4FE1-B355-146AA1764E40}|Autorizador.Core\\Autorizador.Core.csproj|solutionrelative:autorizador.core\\excepciones\\baseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.aplicacion\\behaviours\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8582D1-C790-4900-899D-100F0288AFD4}|Autorizador.Aplicacion\\Autorizador.Aplicacion.csproj|solutionrelative:autorizador.aplicacion\\behaviours\\unhandledexceptionbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.datos\\autorizador.infraestructura.datos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{02E432E8-D999-45F8-A75D-5490A12CAF3D}|Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj|solutionrelative:autorizador.infraestructura.datos\\autorizador.infraestructura.datos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\autorizador.api.servercore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\autorizador.api.servercore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF8B66EE-AB79-4580-BC08-648EBB8F9A8A}|Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.infraestructura.contenedor\\autorizador.infraestructura.contenedor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF8B66EE-AB79-4580-BC08-648EBB8F9A8A}|Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj|solutionrelative:autorizador.infraestructura.contenedor\\autorizador.infraestructura.contenedor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\cliente\\respuestarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\cliente\\respuestarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|f:\\proyectos\\autorizadorcentralizado\\autorizador.api.servercore\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B50EBD02-DBE0-419F-ABA1-73954C51996F}|Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj|solutionrelative:autorizador.api.servercore\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicioAutenticacion.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Servicios\\ServicioAutenticacion.cs",
+              "RelativeDocumentMoniker": "Autorizador.Aplicacion\\Servicios\\ServicioAutenticacion.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Servicios\\ServicioAutenticacion.cs",
+              "RelativeToolTip": "Autorizador.Aplicacion\\Servicios\\ServicioAutenticacion.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:54:44.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IContextoAplicacion.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Servicios\\IContextoAplicacion.cs",
+              "RelativeDocumentMoniker": "Autorizador.Core\\Servicios\\IContextoAplicacion.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Servicios\\IContextoAplicacion.cs",
+              "RelativeToolTip": "Autorizador.Core\\Servicios\\IContextoAplicacion.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:05:45.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServicioBase.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Servicios\\ServicioBase.cs",
+              "RelativeDocumentMoniker": "Autorizador.Aplicacion\\Servicios\\ServicioBase.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Servicios\\ServicioBase.cs",
+              "RelativeToolTip": "Autorizador.Aplicacion\\Servicios\\ServicioBase.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:04:16.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Servicios\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "Autorizador.Aplicacion\\Servicios\\JwtTokenGenerator.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Servicios\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "Autorizador.Aplicacion\\Servicios\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:03:37.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AutenticacionController.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Controllers\\AutenticacionController.cs",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\Controllers\\AutenticacionController.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Controllers\\AutenticacionController.cs",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\Controllers\\AutenticacionController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAArwCIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:17:16.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Clinica.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Dominio.Entidades\\Entidades\\Clinica.cs",
+              "RelativeDocumentMoniker": "Autorizador.Dominio.Entidades\\Entidades\\Clinica.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Dominio.Entidades\\Entidades\\Clinica.cs",
+              "RelativeToolTip": "Autorizador.Dominio.Entidades\\Entidades\\Clinica.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:44:52.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RepositorioConsultaGeneral.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Repositorios\\RepositorioConsultaGeneral.cs",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Datos\\Repositorios\\RepositorioConsultaGeneral.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Repositorios\\RepositorioConsultaGeneral.cs",
+              "RelativeToolTip": "Autorizador.Infraestructura.Datos\\Repositorios\\RepositorioConsultaGeneral.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAiwDcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:44:02.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeguridadConfiguracion.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Configuraciones\\SeguridadConfiguracion.cs",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Datos\\Configuraciones\\SeguridadConfiguracion.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Configuraciones\\SeguridadConfiguracion.cs",
+              "RelativeToolTip": "Autorizador.Infraestructura.Datos\\Configuraciones\\SeguridadConfiguracion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADgvxIAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:49:10.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IServicioBase.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Servicios\\IServicioBase.cs",
+              "RelativeDocumentMoniker": "Autorizador.Core\\Servicios\\IServicioBase.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Servicios\\IServicioBase.cs",
+              "RelativeToolTip": "Autorizador.Core\\Servicios\\IServicioBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:07:28.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContextoBase.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Contextos\\ContextoBase.cs",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Datos\\Contextos\\ContextoBase.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Contextos\\ContextoBase.cs",
+              "RelativeToolTip": "Autorizador.Infraestructura.Datos\\Contextos\\ContextoBase.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAiwCkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:43:50.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClinicaConfiguracion.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Configuraciones\\ClinicaConfiguracion.cs",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Datos\\Configuraciones\\ClinicaConfiguracion.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Configuraciones\\ClinicaConfiguracion.cs",
+              "RelativeToolTip": "Autorizador.Infraestructura.Datos\\Configuraciones\\ClinicaConfiguracion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:49:06.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\appsettings.json",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\appsettings.json",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\appsettings.json",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-02T22:19:23.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\Controllers\\BaseController.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:04:54.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigurarIoC.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Contenedor\\ConfigurarIoC.cs",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Contenedor\\ConfigurarIoC.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Contenedor\\ConfigurarIoC.cs",
+              "RelativeToolTip": "Autorizador.Infraestructura.Contenedor\\ConfigurarIoC.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:15:01.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sesion.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Contenedor\\Sesion.cs",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Contenedor\\Sesion.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Contenedor\\Sesion.cs",
+              "RelativeToolTip": "Autorizador.Infraestructura.Contenedor\\Sesion.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T23:15:29.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Program.cs",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\Program.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Program.cs",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAC0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:29:43.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Autorizador.Infraestructura.Datos",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj",
+              "RelativeToolTip": "Autorizador.Infraestructura.Datos\\Autorizador.Infraestructura.Datos.csproj",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-02T22:42:51.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BaseException.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Excepciones\\BaseException.cs",
+              "RelativeDocumentMoniker": "Autorizador.Core\\Excepciones\\BaseException.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Excepciones\\BaseException.cs",
+              "RelativeToolTip": "Autorizador.Core\\Excepciones\\BaseException.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowC8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:44:33.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Configuracion.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Utilidades\\Configuracion.cs",
+              "RelativeDocumentMoniker": "Autorizador.Core\\Utilidades\\Configuracion.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Core\\Utilidades\\Configuracion.cs",
+              "RelativeToolTip": "Autorizador.Core\\Utilidades\\Configuracion.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:44:34.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UnhandledExceptionBehaviour.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Behaviours\\UnhandledExceptionBehaviour.cs",
+              "RelativeDocumentMoniker": "Autorizador.Aplicacion\\Behaviours\\UnhandledExceptionBehaviour.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Aplicacion\\Behaviours\\UnhandledExceptionBehaviour.cs",
+              "RelativeToolTip": "Autorizador.Aplicacion\\Behaviours\\UnhandledExceptionBehaviour.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:44:58.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Autorizador.Infraestructura.Contenedor",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj",
+              "RelativeDocumentMoniker": "Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj",
+              "RelativeToolTip": "Autorizador.Infraestructura.Contenedor\\Autorizador.Infraestructura.Contenedor.csproj",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-02T22:41:10.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Autorizador.Api.ServerCore",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\Autorizador.Api.ServerCore.csproj",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-02T22:36:12.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Api.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Api.cs",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\Api.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Api.cs",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\Api.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:33:39.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RespuestaRequest.cs",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Cliente\\RespuestaRequest.cs",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\Cliente\\RespuestaRequest.cs",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Cliente\\RespuestaRequest.cs",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\Cliente\\RespuestaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T22:25:33.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Autorizador.Api.ServerCore\\Properties\\launchSettings.json",
+              "ToolTip": "F:\\Proyectos\\AutorizadorCentralizado\\Autorizador.Api.ServerCore\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Autorizador.Api.ServerCore\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-02T22:17:02.261Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/1. Infraestructura/">
+    <Project Path="Autorizador.Infraestructura.Contenedor/Autorizador.Infraestructura.Contenedor.csproj" />
+    <Project Path="Autorizador.Infraestructura.Datos/Autorizador.Infraestructura.Datos.csproj" />
+  </Folder>
+  <Folder Name="/2. Dominio/">
+    <Project Path="Autorizador.Dominio.Entidades/Autorizador.Dominio.Entidades.csproj" />
+  </Folder>
+  <Folder Name="/3. Aplicacion/">
+    <Project Path="Autorizador.Aplicacion/Autorizador.Aplicacion.csproj" />
+    <Project Path="Autorizador.Contracts/Autorizador.Contracts.csproj" />
+    <Project Path="Autorizador.Core/Autorizador.Core.csproj" />
+  </Folder>
+  <Folder Name="/4. Distribucion/">
+    <Project Path="Autorizador.Api.ServerCore/Autorizador.Api.ServerCore.csproj" />
+  </Folder>
+</Solution>
