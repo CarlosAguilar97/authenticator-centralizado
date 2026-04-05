@@ -20,6 +20,8 @@ namespace Autorizador.Infraestructura.Datos.Contextos
             #region Seguridad - SG
             modelBuilder.ApplyConfiguration(new SeguridadConfiguracion());
             modelBuilder.ApplyConfiguration(new ClinicaConfiguracion());
+            modelBuilder.ApplyConfiguration(new SeguridadTokenConfiguracion());
+            
             #endregion
         }
     }

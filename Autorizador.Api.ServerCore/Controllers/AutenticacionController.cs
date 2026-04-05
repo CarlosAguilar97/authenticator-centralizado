@@ -39,5 +39,33 @@ namespace Autorizador.Api.ServerCore.Controllers
 
             return Ok(respuesta);
         }
+        /// <summary>
+        /// Endpoint para renovar el Access Token usando el Refresh Token.
+        /// Permite al usuario mantener la sesión activa sin volver a pedir contraseña.
+        /// </summary>
+        [HttpPost("refresh")]
+        [Consumes("application/x-www-form-urlencoded")]
+        public async Task<IActionResult> Refresh([FromForm] string refresh_token)
+        {
+            if (string.IsNullOrEmpty(refresh_token))
+            {
+                return BadRequest(new { mensaje = "El refresh_token es requerido" });
+            }
+
+            try
+            {
+                var resultado = await _servicioAutenticacion.RenovarTokenAsync(refresh_token);
+                return Ok(resultado);
+            }
+            catch (UnauthorizedAccessException)
+            {
+                // 401 si el refresh token expiró en la base de datos o ya fue usado (rotación)
+                return Unauthorized(new { mensaje = "Sesión expirada o token de renovación inválido" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = "Error al procesar la renovación", detalle = ex.Message });
+            }
+        }
     }
 }
