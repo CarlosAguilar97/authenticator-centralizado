@@ -1,0 +1,177 @@
+# =========================================
+
+# BUILD / COMPILACIÓN (.NET)
+
+# =========================================
+
+bin/
+obj/
+out/
+publish/
+artifacts/
+
+# =========================================
+
+# VISUAL STUDIO / IDEs
+
+# =========================================
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+
+.idea/
+*.sln.iml
+
+# VS Code
+
+.vscode/
+
+# =========================================
+
+# LOGS / DEBUG
+
+# =========================================
+
+*.log
+logs/
+*.tlog
+
+# =========================================
+
+# ARCHIVOS DEL SISTEMA
+
+# =========================================
+
+.DS_Store
+Thumbs.db
+
+# =========================================
+
+# NUGET
+
+# =========================================
+
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# =========================================
+
+# FRONTEND (Angular)
+
+# =========================================
+
+node_modules/
+dist/
+.angular/
+.cache/
+
+# =========================================
+
+# CONFIGURACIÓN SENSIBLE
+
+# =========================================
+
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+
+# =========================================
+
+# BASE DE DATOS / LOCALES
+
+# =========================================
+
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# =========================================
+
+# EXPORTACIONES / ARCHIVOS GENERADOS
+
+# (importante para tu caso de CSV/Excel masivo)
+
+# =========================================
+
+exports/
+temp/
+tmp/
+*.csv
+*.xlsx
+
+# =========================================
+
+# TESTING
+
+# =========================================
+
+TestResults/
+*.trx
+
+# =========================================
+
+# COVERAGE
+
+# =========================================
+
+coverage/
+*.coverage
+*.coveragexml
+
+# =========================================
+
+# PUBLICACIÓN
+
+# =========================================
+
+*.publishsettings
+*.pubxml
+*.azurePubxml
+
+# =========================================
+
+# RESHARPER
+
+# =========================================
+
+_ReSharper*/
+*.DotSettings.user
+
+# =========================================
+
+# CACHE / PERFORMANCE
+
+# (clave para procesos grandes como los tuyos)
+
+# =========================================
+
+*.cache
+*.tmp
+*.bak
+
+# =========================================
+
+# MIGRACIONES EF CORE
+
+# (NO ignorar normalmente)
+
+# =========================================
+
+# Migrations/
+
+# =========================================
+
+# DOCKER (si lo usas luego)
+
+# =========================================
+
+docker-compose.override.yml
