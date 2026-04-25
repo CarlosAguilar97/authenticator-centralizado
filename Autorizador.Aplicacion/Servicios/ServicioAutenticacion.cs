@@ -1,5 +1,6 @@
 ﻿using Autorizador.Aplicacion.Autenticacion;
 using Autorizador.Aplicacion.Response;
+using Autorizador.Core.Constantes;
 using Autorizador.Core.Repositorios;
 using Autorizador.Core.Utils;
 using Autorizador.Dominio.Entidades.Entidades;
@@ -31,38 +32,37 @@ public class ServicioAutenticacion : IServicioAutenticacion
     {
         var usuario = await _repositorioOperacionGeneral.ObtenerUnoONuloAsync<Seguridad>(
                         x => x.NombreUsuario == request.Usuario &&
-                            x.IndicadorEstado == "1" &&
-                            x.Clinica.IndicadorEstado == "1");
+                            x.IndicadorEstado == ConstantesGlobales.INDICADOR_ACTIVO &&
+                            x.Clinica.IndicadorEstado == ConstantesGlobales.INDICADOR_ACTIVO);
 
-        // 2. Validación de seguridad
         if (usuario == null || usuario.Contraseña != request.Clave)
             return null;
+
         var fechaInicio = DateTime.UtcNow;
         var fechaFin = fechaInicio.AddSeconds(3600);
+
+        usuario.Clinica.NombreClinica = usuario.Clinica.NombreClinica.Trim();
+
         string tokenJwt = _jwtGenerator.GenerarToken(usuario.CodigoUsuario, usuario.IdentificadorClinica, usuario.NombrePersona);
 
-        // GENERACIÓN DEL REFRESH TOKEN
         string refreshTokenGenerado = Guid.NewGuid().ToString();
 
-        // CREACIÓN DE LA ENTIDAD SEGURIDADTOKEN
-        var seguridadToken = new SeguridadToken
-        {
-            CodigoUsuario = usuario.CodigoUsuario,
-            ValorToken = refreshTokenGenerado,
-            FechaExpiracion = DateTime.Now.AddDays(7), // Duración de 7 días
-            IndicadorEstado = "1",
-            FechaRegistro = DateTime.Now
-        };
+        var nuevoSeguridadToken = SeguridadToken.Crear(
+            codigoUsuario: usuario.CodigoUsuario,
+            valorToken: refreshTokenGenerado,
+            indicadorEstado: ConstantesGlobales.INDICADOR_ACTIVO,
+            fechaExpiracion: DateTime.Now.AddDays(7) 
+        );
 
-        // LLAMADA AL MÉTODO DE GUARDADO
-        string guardadoExitoso = await GuardarRefreshTokenAsync(seguridadToken);
+        string guardadoExitoso = await GuardarRefreshTokenAsync(nuevoSeguridadToken);
 
         if (guardadoExitoso!="Okey")
         {
             throw new Exception("No se pudo persistir el token de sesión.");
         }
+
         await _repositorioOperacionGeneral.GuardarCambiosAsync();
-        // RETORNO DE LA RESPUESTA
+
         return new AutenticacionResponse(
             AccessToken: tokenJwt,
             TokenType: "Bearer",
@@ -78,34 +78,34 @@ public class ServicioAutenticacion : IServicioAutenticacion
     }
     public async Task<AutenticacionResponse> RenovarTokenAsync(string refreshTokenActual)
     {
-        // 1. Buscar el token en la BD
-        var tokenBd = await _repositorioOperacionGeneral.ObtenerUnoONuloAsync<SeguridadToken>(t =>
+
+        var unTokenSeguridad = await _repositorioOperacionGeneral.ObtenerUnoONuloAsync<SeguridadToken>(t =>
             t.ValorToken == refreshTokenActual &&
-            t.IndicadorEstado == "1" &&
+            t.IndicadorEstado == ConstantesGlobales.INDICADOR_ACTIVO &&
             t.FechaExpiracion > DateTime.Now);
 
-        if (tokenBd == null) throw new UnauthorizedAccessException("Token inválido o expirado");
+        if (unTokenSeguridad == null) throw new UnauthorizedAccessException("Token inválido o expirado");
 
-        // 2. Obtener los datos del usuario
-        var usuario = await _repositorioOperacionGeneral.ObtenerUnoONuloAsync<Seguridad>(u => u.CodigoUsuario == tokenBd.CodigoUsuario);
+        var usuario = await _repositorioOperacionGeneral.ObtenerUnoONuloAsync<Seguridad>(u => u.CodigoUsuario == unTokenSeguridad.CodigoUsuario);
 
-        // 3. Invalidar el token anterior (Rotación)
-        tokenBd.IndicadorEstado ="0";
-        _repositorioOperacionGeneral.Modificar(tokenBd);
+        unTokenSeguridad.ActualizarEstado(ConstantesGlobales.INDICADOR_INACTIVO);
 
-        // 4. Generar nuevo par de tokens
+        _repositorioOperacionGeneral.Modificar(unTokenSeguridad);
+
         string nuevoAccess = _jwtGenerator.GenerarToken(usuario.CodigoUsuario,usuario.IdentificadorClinica,usuario.NombrePersona);
         string nuevoRefresh = GenerarCadenaAleatoria();
+
         var fechaInicio = DateTime.UtcNow;
         var fechaFin = fechaInicio.AddSeconds(3600);
-        // 5. Guardar el nuevo refresh token
-        await _repositorioOperacionGeneral.AdicionarAsync(new SeguridadToken
-        {
-            CodigoUsuario = usuario.CodigoUsuario,
-            ValorToken = nuevoRefresh,
-            FechaExpiracion = DateTime.Now.AddDays(7),
-            IndicadorEstado = "1"
-        });
+
+        var nuevoSeguridadToken = SeguridadToken.Crear(
+            codigoUsuario: usuario.CodigoUsuario,
+            valorToken: nuevoRefresh,
+            indicadorEstado: ConstantesGlobales.INDICADOR_ACTIVO,
+            fechaExpiracion: DateTime.Now.AddDays(7)
+        );
+
+        await _repositorioOperacionGeneral.AdicionarAsync(nuevoSeguridadToken);
 
         await _repositorioOperacionGeneral.GuardarCambiosAsync();
 
@@ -117,7 +117,7 @@ public class ServicioAutenticacion : IServicioAutenticacion
          AsClientId: "AppClinicaCentral",
          XIdUsuario: usuario.CodigoUsuario.ToString(),
          XIdClinica: usuario.IdentificadorClinica.ToString(),
-         Issued: fechaInicio.ToString("R"), // Formato RFC1123
+         Issued: fechaInicio.ToString("R"), 
          Expires: fechaFin.ToString("R")
          );
     }
@@ -132,17 +132,15 @@ public class ServicioAutenticacion : IServicioAutenticacion
     {
         try
         {
-            // 1. Opcional: Inactivar tokens anteriores del mismo usuario
-            var tokensPrevios = await _repositorioOperacionGeneral.ObtenerPorExpresionConLimiteAsync<SeguridadToken>(t =>
-                t.CodigoUsuario == token.CodigoUsuario && t.IndicadorEstado == "1");
+            var listaTokensPrevios = await _repositorioOperacionGeneral.ObtenerPorExpresionConLimiteAsync<SeguridadToken>(t =>
+                t.CodigoUsuario == token.CodigoUsuario && t.IndicadorEstado == ConstantesGlobales.INDICADOR_ACTIVO);
 
-            foreach (var t in tokensPrevios)
+            foreach (var tokenEncontrado in listaTokensPrevios)
             {
-                t.IndicadorEstado = "0"; // Inactivamos los viejos
-                _repositorioOperacionGeneral.Modificar(t);
+                tokenEncontrado.ActualizarEstado(ConstantesGlobales.INDICADOR_INACTIVO);
+                _repositorioOperacionGeneral.Modificar(tokenEncontrado);
             }
 
-            // 2. Insertar el nuevo token
             await _repositorioOperacionGeneral.AdicionarAsync(token);
            
             return  "Okey";

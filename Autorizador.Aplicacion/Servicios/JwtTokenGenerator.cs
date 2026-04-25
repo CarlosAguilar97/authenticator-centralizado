@@ -9,7 +9,6 @@ namespace Autorizador.Aplicacion.Servicios;
 
 public class JwtTokenGenerator : IJwtTokenGenerator
 {
-    // En un caso real, esto viene de IOptions<JwtSettings>
     private const string SecretKey = "Tu_Llave_Secreta_Super_Segura_2026";
 
     public string GenerarToken(Guid codigoUsuario, int idClinica, string nombrePersona)
@@ -20,7 +19,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         var claims = new[]
         {
             new Claim("CodUsuario", codigoUsuario.ToString()),
-            new Claim("IdClinica", idClinica.ToString()), // Claim vital para multiclínica
+            new Claim("IdClinica", idClinica.ToString()),
             new Claim(ClaimTypes.Name, nombrePersona),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
